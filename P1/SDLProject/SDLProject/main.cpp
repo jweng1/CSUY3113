@@ -1,4 +1,5 @@
 //Jason Weng jyw320 Project 1 02/17/2021
+//update
 
 #define GL_SILENCE_DEPRECATION
 
@@ -88,10 +89,7 @@ void ProcessInput() {
     }
 }
 
-void Update() {
-    //shipMatrix = glm::mat4(1.0f);
-    //playerMatrix = glm::mat4(0.1f);
-    
+void Update() {    
     shipMatrix = glm::translate(shipMatrix, glm::vec3(0.02f, 0.02f, 0.0f));
     playerMatrix = glm::rotate(playerMatrix, glm::radians(5.0f), glm::vec3(0.0f, 0.0f, 1.0f));
     
