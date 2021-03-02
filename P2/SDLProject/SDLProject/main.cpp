@@ -118,7 +118,7 @@ void Update() {
         gameIsRunning = false;
     }
     left_position += left_movement * default_speed * deltaTime;
-    right_position += right_position * default_speed * deltaTime;
+    right_position += right_movement * default_speed * deltaTime;
     
     
     if (left_position.y < -2.55f){
