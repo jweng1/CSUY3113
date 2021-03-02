@@ -109,46 +109,49 @@ void ProcessInput() {
 float lastTicks = 0.0f;
 
 void Update() {
-    if (!(ball_position.x >= 4.8f || ball_position.x <= -4.8f)){
-        float ticks = (float)SDL_GetTicks() / 1000.0f;
-        float deltaTime = ticks - lastTicks;
-        lastTicks = ticks;
+
+    float ticks = (float)SDL_GetTicks() / 1000.0f;
+    float deltaTime = ticks - lastTicks;
+    lastTicks = ticks;
     
-        left_position += left_movement * default_speed * deltaTime;
-        right_position += right_position * default_speed * deltaTime;
-        
-        
-        if (left_position.y < -2.55f){
-            left_position.y = -2.55f;
-        }
-        if (left_position.y > 2.55f){
-            left_position.y = 2.55f;
-        }
-        if (right_position.y < -2.55f){
-            right_position.y = -2.55f;
-        }
-        if (right_position.y > 2.55f){
-            right_position.y = 2.55f;
-        }
-        
-        if (run){
-            ball_position.x += direction_x * 2.5 * deltaTime;
-            ball_position.y += direction_y * 2.5 * deltaTime;
-        }
-        float leftxdist = fabs(left_position.x - ball_position.x) - ((0.4f + 0.4f) / 2.0f);
-        float leftydist = fabs(left_position.y - ball_position.y) - ((2.0f + 0.4f) / 2.0f);
-        float rightxdist = fabs(right_position.x - ball_position.x) - ((0.4f + 0.4f) / 2.0f);
-        float rightydist = fabs(right_position.y - ball_position.y) - ((2.0f + 0.4f) / 2.0f);
-        
-        if ((leftxdist<=0 && leftydist<=0) || (rightxdist <=0 && rightydist <=0)){
-            direction_x = -direction_x;
-        }
-        if (ball_position.y >= 3.55f || ball_position.y <= -3.55f){
-            direction_y = -direction_y;
-        }
-        modelMatrix = glm::mat4(1.0f);
-        modelMatrix = glm::translate(modelMatrix, ball_position);
+    if(ball_position.x >= 4.8f || ball_position.x <= -4.8f){
+        gameIsRunning = false;
     }
+    left_position += left_movement * default_speed * deltaTime;
+    right_position += right_position * default_speed * deltaTime;
+    
+    
+    if (left_position.y < -2.55f){
+        left_position.y = -2.55f;
+    }
+    if (left_position.y > 2.55f){
+        left_position.y = 2.55f;
+    }
+    if (right_position.y < -2.55f){
+        right_position.y = -2.55f;
+    }
+    if (right_position.y > 2.55f){
+        right_position.y = 2.55f;
+    }
+    
+    if (run){
+        ball_position.x += direction_x * 2.5 * deltaTime;
+        ball_position.y += direction_y * 2.5 * deltaTime;
+    }
+    float leftxdist = fabs(left_position.x - ball_position.x) - ((0.4f + 0.4f) / 2.0f);
+    float leftydist = fabs(left_position.y - ball_position.y) - ((2.0f + 0.4f) / 2.0f);
+    float rightxdist = fabs(right_position.x - ball_position.x) - ((0.4f + 0.4f) / 2.0f);
+    float rightydist = fabs(right_position.y - ball_position.y) - ((2.0f + 0.4f) / 2.0f);
+    
+    if ((leftxdist<=0 && leftydist<=0) || (rightxdist <=0 && rightydist <=0)){
+        direction_x = -direction_x;
+    }
+    if (ball_position.y >= 3.55f || ball_position.y <= -3.55f){
+        direction_y = -direction_y;
+    }
+    modelMatrix = glm::mat4(1.0f);
+    modelMatrix = glm::translate(modelMatrix, ball_position);
+    
 }
 
 
