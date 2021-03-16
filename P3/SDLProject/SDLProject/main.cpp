@@ -12,7 +12,7 @@
 #include "ShaderProgram.h"
 
 #define STB_IMAGE_IMPLEMENTATION
-#define PLATFORM_COUNT 10
+#define PLATFORM_COUNT 12
 #include "stb_image.h"
 
 #include "Entity.hpp"
@@ -98,11 +98,18 @@ void Initialize() {
     for (int i = 0; i < PLATFORM_COUNT; i++){
         if (i == 2 || i == 3 || i == 4){
             state.platforms[i].textureID = platformTextID;
-        }else{
+            state.platforms[i].position = glm::vec3(i-4.5f,-3.5f,0);
+            state.platforms[i].Update(0,NULL,0);
+        }else if (i == 5 || i == 6){
             state.platforms[i].textureID = wallTextID;
+            state.platforms[i].position = glm::vec3(i-2.5f,1.5f,0);
+            state.platforms[i].Update(0,NULL,0);
+        } else{
+            state.platforms[i].textureID = wallTextID;
+            state.platforms[i].position = glm::vec3(i-4.5f,-3.5f,0);
+            state.platforms[i].Update(0,NULL,0);
         }
-        state.platforms[i].position = glm::vec3(i-4.5f,-3.5f,0);
-        state.platforms[i].Update(0,NULL,0);
+        
     }
 
 }
