@@ -138,6 +138,8 @@ void Update() {
         ball_position.x += direction_x * 2.5 * deltaTime;
         ball_position.y += direction_y * 2.5 * deltaTime;
     }
+    
+    //collision detection
     float leftxdist = fabs(left_position.x - ball_position.x) - ((0.4f + 0.4f) / 2.0f);
     float leftydist = fabs(left_position.y - ball_position.y) - ((2.0f + 0.4f) / 2.0f);
     float rightxdist = fabs(right_position.x - ball_position.x) - ((0.4f + 0.4f) / 2.0f);
