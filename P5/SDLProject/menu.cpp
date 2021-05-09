@@ -9,7 +9,7 @@ void menu::Initialize() {
     state.player = new Entity();
 }
 
-void  menu::Update(float deltaTime) {
+void menu::Update(float deltaTime) {
 
 }
 
