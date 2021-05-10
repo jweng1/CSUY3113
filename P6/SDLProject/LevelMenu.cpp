@@ -30,7 +30,7 @@ void LevelMenu::Initialize() {
     state.player->movement = glm::vec3(0);
     state.player->acceleration = glm::vec3(0, -9.81f, 0);
     state.player->speed = 0.0f;
-    state.player->textureID = Util::LoadTexture("george_0.png");
+    state.player->textureID = Util::LoadTexture("player_tilesheet.png");
 
     state.player->animRight = new int[4] {3, 7, 11, 15};
     state.player->animLeft = new int[4] {1, 5, 9, 13};

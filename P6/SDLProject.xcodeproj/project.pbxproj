@@ -11,6 +11,9 @@
 		3D66CB032648981600D7E9A8 /* music.mp3 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3D66CB022648980600D7E9A8 /* music.mp3 */; };
 		3D66CB092648990500D7E9A8 /* zombie_attack0.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3D66CB07264898A600D7E9A8 /* zombie_attack0.png */; };
 		3D66CB0D26489A3700D7E9A8 /* robot.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3D66CB0C26489A2A00D7E9A8 /* robot.png */; };
+		3DBD5A4E2648BC8400DB6231 /* player1.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3DBD5A4D2648BC7100DB6231 /* player1.png */; };
+		3DBD5A522648BD4100DB6231 /* player_tilesheet.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3DBD5A502648BD1200DB6231 /* player_tilesheet.png */; };
+		3DBD5A562648C11C00DB6231 /* player2.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3DBD5A552648C11200DB6231 /* player2.png */; };
 		B747C2E224A18D1D00B6C0D0 /* george_0.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = B747C2E124A18D0D00B6C0D0 /* george_0.png */; };
 		B747C2E524A1A0D500B6C0D0 /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B747C2E324A1A0D500B6C0D0 /* Entity.cpp */; };
 		B7965DBB24E7336500124521 /* jump.wav in CopyFiles */ = {isa = PBXBuildFile; fileRef = B7965DBA24E7335A00124521 /* jump.wav */; };
@@ -41,6 +44,9 @@
 				DBDF1B612323DE9E007CECB1 /* shaders in CopyFiles */,
 				B7965DBB24E7336500124521 /* jump.wav in CopyFiles */,
 				3D66CB0D26489A3700D7E9A8 /* robot.png in CopyFiles */,
+				3DBD5A562648C11C00DB6231 /* player2.png in CopyFiles */,
+				3DBD5A4E2648BC8400DB6231 /* player1.png in CopyFiles */,
+				3DBD5A522648BD4100DB6231 /* player_tilesheet.png in CopyFiles */,
 				3D66CB092648990500D7E9A8 /* zombie_attack0.png in CopyFiles */,
 				3D66CB032648981600D7E9A8 /* music.mp3 in CopyFiles */,
 				3D66CAFB2648883B00D7E9A8 /* greystone.png in CopyFiles */,
@@ -57,6 +63,9 @@
 		3D66CB022648980600D7E9A8 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 		3D66CB07264898A600D7E9A8 /* zombie_attack0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zombie_attack0.png; sourceTree = "<group>"; };
 		3D66CB0C26489A2A00D7E9A8 /* robot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot.png; sourceTree = "<group>"; };
+		3DBD5A4D2648BC7100DB6231 /* player1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player1.png; sourceTree = "<group>"; };
+		3DBD5A502648BD1200DB6231 /* player_tilesheet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player_tilesheet.png; sourceTree = "<group>"; };
+		3DBD5A552648C11200DB6231 /* player2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player2.png; sourceTree = "<group>"; };
 		B747C2E124A18D0D00B6C0D0 /* george_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = george_0.png; sourceTree = "<group>"; };
 		B747C2E324A1A0D500B6C0D0 /* Entity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Entity.cpp; sourceTree = "<group>"; };
 		B747C2E424A1A0D500B6C0D0 /* Entity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
@@ -128,7 +137,10 @@
 				B7D75FCB24C66E4100EF4B77 /* tileset.png */,
 				B7F5766024BAB46D00AFAF14 /* font1.png */,
 				B747C2E124A18D0D00B6C0D0 /* george_0.png */,
+				3DBD5A4D2648BC7100DB6231 /* player1.png */,
+				3DBD5A502648BD1200DB6231 /* player_tilesheet.png */,
 				3D66CB07264898A600D7E9A8 /* zombie_attack0.png */,
+				3DBD5A552648C11200DB6231 /* player2.png */,
 				3D66CB0C26489A2A00D7E9A8 /* robot.png */,
 				3D66CAFA2648881200D7E9A8 /* greystone.png */,
 				DBDF1B5B2323DE8D007CECB1 /* glm */,
